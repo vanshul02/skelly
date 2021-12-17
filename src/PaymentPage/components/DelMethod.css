@@ -1,0 +1,7 @@
+.delivery-form{
+    display:grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(2, 50%);
+    grid-gap : 5% 0px;
+}

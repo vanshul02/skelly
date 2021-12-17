@@ -1,0 +1,9 @@
+.login-form__wrapper input{
+    width : 60%;
+    margin: 2% 15%;
+}
+
+.modal-buttons {
+    margin-top: 5%;
+    text-align : center;
+}

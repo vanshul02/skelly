@@ -1,25 +1,39 @@
-import logo from './logo.svg';
+import React, { useState, useCallback } from 'react'
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+
+import MainNavigation from './shared/components/Navigation/MainNavigation';
+import PaymentPage from './PaymentPage/PaymentPage';
+import { AuthContext } from './shared/context/auth-context';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const login = useCallback(() => {
+    console.log("Login Function Called!");
+    setIsLoggedIn(true);
+  }, []);
+
+  const logout = useCallback(() => {
+    setIsLoggedIn(false);
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <AuthContext.Provider value={{ isLoggedIn: isLoggedIn, login: login, logout: logout }}>
+        <Router>
+          <MainNavigation />
+          <main>
+            <Switch>
+              <Route path="/">
+                <PaymentPage />
+              </Route>
+              <Redirect to="/" />
+            </Switch>
+          </main>
+        </Router>
+      </AuthContext.Provider>
+    </>
+  )
 }
 
-export default App;
+export default App

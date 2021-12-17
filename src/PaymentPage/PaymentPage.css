@@ -1,0 +1,192 @@
+.upper-text__wrapper{
+    display:flex;
+    flex-direction:column;
+}
+
+.right-upper-icons{
+    visibility:hidden;
+    display : flex;
+    font-size : 24px;
+    height : 50%;
+}
+
+.gray-line {
+    margin-top: 6%;
+    height : 1px;
+    background-color:gray;
+    width : 40%;
+}
+
+.right-upper-icons .uil {
+    margin : auto 5px;
+    border : 1px solid rgb(0, 190, 133);
+    padding : 4px;
+    border-radius : 50%;
+}
+
+.right-upper-icons .uil-truck {
+    background-color: rgb(0, 190, 133);
+    color:white;
+}
+
+.flex_content__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+ h2 {
+    margin-bottom : 2%;
+    margin-left: 3%;
+}
+
+.shipping_info__wrapper h3 {
+    margin-top : 5%;
+}
+
+.shipping_info__form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction:column;
+    justify-content : space-around;
+}
+.shipping_info_lform {
+    width : 100%;
+}
+.shipping_info_rform {
+    width : 100%;
+}
+
+select:focus {
+    outline: 3px solid rgb(0, 190, 133);
+}
+
+.payment_and_delivery__wrapper {
+    display : flex;
+    flex-direction: column;
+}
+
+.cart-info__wrapper {
+    display : flex;
+    flex-direction: column;
+}
+
+.total-cost {
+    background-color: rgb(230, 230, 230);
+    width: 45%;
+    margin : 25px 35px;
+    height : 20px;
+    border-radius: 40px;
+    padding: 15px 52px;
+    font-weight: 600;
+}
+
+.total-cost span{
+    color: gray;
+    font-weight: 400;
+}
+
+.free-shipping {
+    display : flex;
+    width: 70%;
+    margin : 15px 55px;
+}
+
+.truck-img {
+    font-size: 24px;
+    padding: 20px 10px;
+}
+
+.free-shipping p {
+    width : 60%;
+    margin : auto 20px;
+}
+
+.free-shipping span{
+    font-weight: 900;
+}
+
+.final-buttons__wrapper{
+    display : flex;
+}
+
+.back-button{
+    display : none;
+    padding: 10px;
+    cursor : pointer;
+}
+
+.back-button div {
+    margin : 10px 32px;
+    font-weight: 900;
+}
+
+.back-button i{
+    position : absolute;
+    font-size: 32px;
+}
+
+.payment-buttons button{
+    height : 50px;
+    width : 150px;
+    margin : 10px 10px 0px 12px;
+    padding : 0.25rem 0.75rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .upper-text__wrapper{
+        flex-direction:row;
+    }
+    .right-upper-icons{
+        visibility:visible;
+        width:20%;
+    }
+    .flex_content__wrapper {
+        flex-direction: row;
+        padding: 0 3%;
+    }
+    .shipping_info__form {
+        flex-direction:row;
+    }
+    .shipping_info_lform {
+        width : 45%;
+    }
+    .shipping_info_rform {
+        width : 45%;
+    }
+    .shipping_info__wrapper{
+        height: 100%;
+        width : 40%;
+    }
+    .payment_and_delivery__wrapper {
+        height: 100%;
+        width : 28%;
+        padding : 2% 0 2% 10px;
+        margin : auto 23px;
+    }
+
+    .cart-info__wrapper{
+        height: 100%;
+        width : 28%;
+    }
+
+    .final-buttons__wrapper{
+        margin-top: 40px;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    .upper-text__wrapper{
+        justify-content:space-between;
+    }
+
+    .back-button{
+        display : block;
+    }
+    .payment-buttons button{
+        height : 70%;
+        width : 40%;
+        margin : 10px 10px 0px 12px;
+        padding : 1rem 2rem;
+    }
+}

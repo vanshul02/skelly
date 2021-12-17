@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  margin-top: 20px;
+  height:10%;
+}
+
+.card-img {
+  border-radius: 50%;
+}
+
+.card-title {
+  margin : auto auto auto 15px;
+  width:30%;
+  height:100%;
+}
+
+.card-code {
+  font-size : 14px;
+  margin-top: 3px;
+  color: grey;
+}
+
+.card-price {
+  width : 40%;
+  height: 100%;
+  margin : 0;
+  padding : 0;
+  text-align: center;
+}

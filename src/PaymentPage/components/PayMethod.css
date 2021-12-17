@@ -1,0 +1,29 @@
+.payment-form{
+    display:grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(3, 30%);
+    grid-gap : 5% 0px;
+}
+
+@media screen and (min-width:768px) {
+    .payment-form{
+        display:grid;
+        justify-content: space-between;
+        /* margin : 80px 0; */
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: repeat(2, 50%);
+        grid-gap : 5% 0px;
+    }
+}
+
+/* .up-button {
+    margin-top: 0.5rem;
+    display:flex;
+    justify-content:space-around;
+}
+.down-button {
+    margin-top: 2rem;
+    display:flex;
+    justify-content:space-around;
+} */
